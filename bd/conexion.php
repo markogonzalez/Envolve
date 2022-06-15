@@ -5,9 +5,9 @@
 		private $conn;
 
 		public function __construct() {
-			$conexionsql = "mysql:host=localhost;dbname=u844642392_mg;";
+			$conexionsql = "mysql:host=localhost;dbname=nombre_base_datos;";
 			try {
-				$this->conn = new PDO($conexionsql,"u844642392_mg","Markogonzalez15");
+				$this->conn = new PDO($conexionsql,"Usuario","Contraseña");
 				$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			} catch (Exception $e) {
 				$this->conn = "Error en la conexión";
